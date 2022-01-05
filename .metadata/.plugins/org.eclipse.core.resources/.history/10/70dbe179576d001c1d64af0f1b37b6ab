@@ -1,0 +1,13 @@
+package com.primeiroprojeto.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/clientes")
+public class ClienteController {
+
+	public String hello() {
+		return "Olá, mundo!";
+	}
+}

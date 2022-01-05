@@ -1,0 +1,5 @@
+package com.primeiroprojeto.model;
+
+public class Cliente {
+
+}

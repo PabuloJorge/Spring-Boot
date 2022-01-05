@@ -1,0 +1,26 @@
+package com.springboot.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.springboot.model.User;
+
+@RestController
+@RequestMapping("/users")
+public class UserController {
+
+	@GetMapping
+	public User getUser() {
+		User user  = new User(1L, "Pablo", "pabulojdn");
+		return user;
+	}
+	
+	@PostMapping
+	public User create(@RequestBody User user) {
+		return user;
+	}
+
+}

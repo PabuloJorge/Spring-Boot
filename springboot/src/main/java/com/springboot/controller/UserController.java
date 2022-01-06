@@ -19,7 +19,6 @@ import com.springboot.repository.UserRepository;
 @RequestMapping("/users")
 public class UserController {
 
-	private List<User> users = new ArrayList<>();
 
 	@Autowired
 	private UserRepository userRepository;

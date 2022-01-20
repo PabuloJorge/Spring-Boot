@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.segundoprojeto.model.Usuario;
 import com.segundoprojeto.repository.UsuarioRepository;
-import com.springboot.model.User;
+
 
 @RestController
 @RequestMapping("/usuarios")
